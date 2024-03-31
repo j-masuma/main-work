@@ -64,7 +64,7 @@ const Signup = () => {
                                         <Col className='' lg={6} md={6} sm={12}>
                                             <FloatingLabel
                                             controlId="floatingTextarea"
-                                            label="Name"
+                                            label="First Name"
                                             className="mb-3"
                                             >
                                                 <Form.Control type='name' placeholder="Leave a comment here" />
@@ -73,7 +73,7 @@ const Signup = () => {
                                         <Col className='' lg={6} md={6} sm={12}>
                                             <FloatingLabel
                                             controlId="floatingTextarea"
-                                            label="Name"
+                                            label="Last Name"
                                             className="mb-3"
                                             >
                                                 <Form.Control type='name' placeholder="Leave a comment here" />

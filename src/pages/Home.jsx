@@ -10,7 +10,9 @@ import Library from "../components/Library";
 import Navbars from "../components/Navbar";
 
 // import Chats from "../components/Chats";
- import Signup from "../components/Signup";
+ 
+
+import BotFeatures from "../components/BotFeatures";
 
 
 
@@ -18,18 +20,19 @@ import Navbars from "../components/Navbar";
 
 function Home() {
   return (
-    // <div>
-    //   <Navbars className="" />
-    //   <StudyPlan/>
-    //   <Library/>
-    //   <RecentChats/> 
-    //   <Footer />
-    // </div>
-    <>
+    <div>
+      <Navbars className="" />
+      <BotFeatures/>
+      <StudyPlan/>
+      <Library/>
+      <RecentChats/> 
+      <Footer />
+    </div>
+    // <>
       
         
-    <Signup/>
-    </>
+    // <Signup/>
+    // </>
   );
 }
 

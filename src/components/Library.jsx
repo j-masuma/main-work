@@ -4,7 +4,7 @@ import libImage from '../assets/images/libraryImg.svg'
 import { Link } from 'react-router-dom'
 const Library = () => {
   return (
-    <Container className='mt-5 '>
+    <Container className='mt-5 pt-5 '>
         
         <h1 className=' pb-4'>Library</h1>
         <div className='d-flex align-items-center'>
