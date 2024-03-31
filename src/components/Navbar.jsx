@@ -1,10 +1,10 @@
 
-import { Link } from 'react-router-dom';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {  Dropdown, DropdownButton, Modal,Nav } from 'react-bootstrap';
+import {  Dropdown, DropdownButton,Nav, Navbar } from 'react-bootstrap';
 import Bot from './Bot';
 import { useState } from 'react';
-import Logo from "../assets/images/parotimg.svg";
+import Logo from "../assets/images/parrot.png";
 
 function Navbars(){
    
@@ -14,43 +14,43 @@ function Navbars(){
     
     
     return(
-        
-       
+        <Navbar expand="lg" className="bg-body-tertiary p-4" fixed="top">
       
-            <Nav className="me-auto justify-content-between bg-white p-4" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}>
+            <Navbar.Brand href="#home">
                 <div className='d-flex'>
                     <img src={Logo} width={30} height={30} alt='Logo'/>
                     <h4>LearnEase</h4>
                     
                 </div>
-                <div>
-                    <Nav className="me-auto" >
-                        <Nav.Link className='text-black pr-4' as={Link} to="/dashboard"  href="study-plans" >DASHBOARD</Nav.Link>
-                        <Nav.Link className='text-black' as={Link} to="/" href="#home">MONITOR PROGRESS</Nav.Link>
-                        <Nav.Link className='text-black' as={Link} to="/study-plans" href="study-plans" >STUDY PLAN</Nav.Link> 
-                        <Nav.Link className='text-black' as={Link} to="/library"  href="library" >LIBRARY</Nav.Link>
-                        <Nav.Link className='text-black' onClick={handleShowModal}>BOT</Nav.Link>
-
-                        <Modal show={showModal} onHide={handleCloseModal}>
-                            
-                            
-                            <Bot showModal={showModal}/>
-                        
-               
-                    </Modal>
-
-                    </Nav>
-                </div>
-                <div className='' >
-                    <Nav className="me-auto">
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto text-center">
+                    <Nav.Link href="/dashboard">DASHBOARD</Nav.Link>
+                    <Nav.Link to="/monitor-progress" href="#link">MONITOR PROGRESS</Nav.Link>
+                    <Nav.Link href="/study-plans">STUDY PLANS</Nav.Link>
+                    <Nav.Link href="/library">LIBRARY</Nav.Link>
+                    <Nav.Link className='text-black' onClick={handleShowModal}>BOTS</Nav.Link>
+                        {/* <Modal show={showModal} onHide={handleCloseModal}>    
+                            <Bot showModal={showModal} handleCloseModal={handleCloseModal}/>
+                        </Modal> 
+             */}
+              <Bot showModal={showModal} handleCloseModal={handleCloseModal}/>
+                </Nav>
+                
+            </Navbar.Collapse>
+            <Nav className="me-auto">
                         
                         <DropdownButton 
                         variant="secendary" 
                         title={
-                            <div className='d-inline-flex align-items-center border rounded-circle overflow-hidden' style={{ width: '40px', height: '40px' }}>
-                                <img src={Logo} alt="JM" />
+                            <div className='d-inline-flex align-items-center border rounded-circle overflow-hidden fixed' style={{ width: '35px', height: '35px' }}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                </svg>
 
                             </div>}>
+
                             <Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
                             <Dropdown.Item href="#/action-2">Settings</Dropdown.Item>
                             <Dropdown.Divider />
@@ -58,10 +58,9 @@ function Navbars(){
                         </DropdownButton>
                                             
                     </Nav>
-                </div>
-
-            </Nav>
-           
+        
+        </Navbar>
+       
     );
 }
 

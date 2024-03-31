@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.from_container{
+    width: 35%;
+    
+}
+@media screen and (max-width:1000px){
+.from_container{
+    width:45%}    
+}
+html, body {
+  overflow: hidden;
+  height: 100%;
+ 
+}
+
+@media screen and (max-width:700px){
+    .from_container{
+        width:65%}    
+    }
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      .animated-text {
+        animation: fadeIn 2.5s ease-out;
+      }
+    /* styles.css */
+
+/* Add styles for the search icon */
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.searchBar input[type="text"] {
+  padding: 8px;
+  width: 200px; /* Adjust width as needed */
+  border: 0px solid #f8f5f5;
+  border-radius: 4px;
+  outline: none;
+}
+
+#fav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(11, 1, 1);
+  background: transparent;
+  padding: 10px;
+  width: 25rem;
+  margin: 5px auto;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(188, 183, 183);
+}
+.favChats{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5px;
+  
+}
+.bot{
+  background-color: rgb(198, 201, 198);
+  width: fit-content;
+  
+}
+
+#tone {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Add this line to horizontally center the content */
+  color: rgba(222, 222, 222, 1);
+  background: transparent;
+  padding: 5px;
+  width: 10rem;
+  margin: 5px auto;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(98 ,98 ,98,1);
+  margin: 5px;
+}
+.botTone{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 5px;
+  
+}
