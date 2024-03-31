@@ -11,8 +11,8 @@ import Navbars from "../components/Navbar";
 
 // import Chats from "../components/Chats";
  import Signup from "../components/Signup";
-import Login from "../components/Login";
-import Signme from "../components/Signme";
+
+
 
 
 
@@ -26,9 +26,8 @@ function Home() {
     //   <Footer />
     // </div>
     <>
-        {/* <Signup/> */}
+      
         
-    <Signme/>
     <Signup/>
     </>
   );
