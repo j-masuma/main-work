@@ -14,7 +14,7 @@ function Navbars(){
     
     
     return(
-        <Navbar expand="lg" className="bg-body-tertiary p-4" fixed="top">
+        <Navbar expand="lg" className=" p-2" fixed="top" style={{backgroundColor:"lightgreen"}}>
       
             <Navbar.Brand href="#home">
                 <div className='d-flex'>
@@ -26,22 +26,20 @@ function Navbars(){
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto text-center">
-                    <Nav.Link href="/dashboard">DASHBOARD</Nav.Link>
+                    <Nav.Link href="/">DASHBOARD</Nav.Link>
                     <Nav.Link to="/monitor-progress" href="#link">MONITOR PROGRESS</Nav.Link>
-                    <Nav.Link href="/study-plans">STUDY PLANS</Nav.Link>
-                    <Nav.Link href="/library">LIBRARY</Nav.Link>
-                    <Nav.Link className='text-black' onClick={handleShowModal}>BOTS</Nav.Link>
-                        {/* <Modal show={showModal} onHide={handleCloseModal}>    
-                            <Bot showModal={showModal} handleCloseModal={handleCloseModal}/>
-                        </Modal> 
-             */}
-              <Bot showModal={showModal} handleCloseModal={handleCloseModal}/>
+                    <Nav.Link to="/study-plan-page" href="/study-plan-page" >STUDY PLANS</Nav.Link>
+                    <Nav.Link href="/library-page">LIBRARY</Nav.Link>
+                    <Nav.Link  onClick={handleShowModal}>BOTS</Nav.Link>
+                        
+                    <Bot showModal={showModal} handleCloseModal={handleCloseModal}/>
                 </Nav>
                 
             </Navbar.Collapse>
             <Nav className="me-auto">
                         
                         <DropdownButton 
+                        className=''
                         variant="secendary" 
                         title={
                             <div className='d-inline-flex align-items-center border rounded-circle overflow-hidden fixed' style={{ width: '35px', height: '35px' }}>
@@ -57,7 +55,7 @@ function Navbars(){
                             <Dropdown.Item href="#/action-3">Logout</Dropdown.Item>
                         </DropdownButton>
                                             
-                    </Nav>
+            </Nav>
         
         </Navbar>
        

@@ -19,7 +19,7 @@ const StudyPlan = () => {
 */
   return (
     <Container className='mt-5 pt-5'>
-        <h1 className='pb-3'>Study Plans</h1>
+        <h1 className='pb-3'>Generate Study Plan</h1>
         
 
         <Form>

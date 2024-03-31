@@ -13,7 +13,7 @@ function Bot({showModal, handleCloseModal}) {
         {
             image:chat,
             title:"Tutor Bot",
-            link:'/chatwith'
+            link:'/tutor-bot'
         },
         {
             image:pdfImg,
@@ -27,7 +27,7 @@ function Bot({showModal, handleCloseModal}) {
         },
         {
             image:ideaImg,
-            title:"Summerize",
+            title:"Summarize",
             link:'summerize'
         },
         {
