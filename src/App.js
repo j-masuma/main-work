@@ -13,6 +13,8 @@ import StudyPlanPage from './pages/StudyPlanPage';
 import Detective from './components/Detective';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import Quiz from './components/Quiz';
+import Summarize from './components/Summarize';
 //import Chats from './components/Chats';
 
 function App() {
@@ -27,8 +29,9 @@ function App() {
         <Route path='/study-plan-page' element={<StudyPlanPage/>}/>
         <Route path='/detective' element={<Detective/>}/>
         <Route path='/signup' element={<Signup/>}/>
-         
+        <Route path='/quizes' element={<Quiz/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/summary' element={<Summarize/>}/>
         {/* <Route path='/tutor-bot' element={<Chats/>}/>  */}
         
         

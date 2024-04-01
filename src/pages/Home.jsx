@@ -13,6 +13,7 @@ import Navbars from "../components/Navbar";
  
 
 import BotFeatures from "../components/BotFeatures";
+import Quiz from "../components/Quiz";
 
 
 
@@ -29,9 +30,7 @@ function Home() {
       <Footer />
     </div>
     // <>
-      
-        
-    // <Signup/>
+    //   <Quiz/>
     // </>
   );
 }

@@ -6,6 +6,7 @@ import quizImg from "../assets/images/quizImg.svg";
 import ideaImg from "../assets/images/idea.svg";
 import pdfImg from "../assets/images/pdfImg.svg"
 import { Link } from 'react-router-dom';
+import activity from "../assets/images/activity.svg"
 //import { Link } from 'react-router-dom';
 
 function Bot({showModal, handleCloseModal}) {
@@ -22,19 +23,19 @@ function Bot({showModal, handleCloseModal}) {
             link:'/chatwithpdf'
         },
         {
-            image:chat,
+            image:activity,
             title:"Detective",
-            link:'detective'
+            link:'/detective'
         },
         {
             image:ideaImg,
             title:"Summarize",
-            link:'summerize'
+            link:'/summary'
         },
         {
             image:quizImg,
             title:"Quizes",
-            link:'/quizzes'
+            link:'/quizes'
         },
         {
             image:flashcards,
