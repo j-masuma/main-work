@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div>
         <div className='pt-3 text-center'>
-            <h2 className="animated-text" style={{ fontWeight: "bold", fontSize: "50px", color: "green" }}>LearnEase</h2>
+            <h2 className="animated-text text-success" style={{ fontWeight: "bold", fontSize: "50px" }}>LearnEase</h2>
             <p style={{ fontWeight: "20px", fontSize: "16px"}}>Your Study Coordinator</p>                
         </div>
         <Container fluid className='d-flex align-items-center justify-content-center text-center '>
@@ -33,7 +33,7 @@ const Login = () => {
                                         <Link to="/signup" className='ms-2'>Sign up</Link>
                                     </p>
                                     <p className=' ' style={{fontSize:'12px'}}>   
-                                        <Link to="/" className='ms-2'>Forget Password</Link>
+                                        <Link to="/" className='ms-2'>Forgot Password</Link>
                                     </p>
                                 </Form>
 

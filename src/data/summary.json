@@ -1,0 +1,14 @@
+{
+    
+        "title": "Deobfuscating and Analyzing JavaScript Malware",
+        "videoLink": "Chaos to Clarity: Deciphering Obfuscated JavaScript Malware",
+        "summary": "In the video, the host, Lori, demonstrates the process of manually reverse engineering and deobfuscating a heavily obfuscated JavaScript code. The JavaScript belongs to the Async RAT (Remote Access Tool), which is commonly used by malware authors for malicious activities such as executing remote commands or exfiltrating data from a victim’s machine. Lori explains the complexities involved in understanding obfuscated JavaScript and the necessity to deobfuscate it to grasp its full capabilities. Throughout the video, she uses a secure and dedicated malware analysis machine to safely analyze the malware without executing it dynamically. Lori goes through the code, renaming variables, rearranging functions, and decoding strings to unveil the original form and structure of the script as intended by the malware author. This process reveals the underlying malicious commands designed to manipulate the victim’s system, such as downloading and executing files from a remote server.",
+        "mainPoints": [
+          "Lori introduces the topic of reverse engineering and deobfuscating a JavaScript code associated with the Async RAT.",
+          "She highlights the challenges of working with heavily obfuscated JavaScript, used by malware authors to hide the code’s true purpose.",
+          "Using a secure analysis machine, Lori statically analyzes the malware, ensuring safety from malicious execution.",
+          "Detailed steps include renaming variables, rearranging functions, and decoding strings to reconstruct the original script layout and logic.",
+          "The final analysis reveals the malware’s function to download and execute malicious files, demonstrating the potential harm of such obfuscated scripts."
+        ]
+      
+}

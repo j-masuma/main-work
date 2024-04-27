@@ -45,9 +45,14 @@ function Bot({showModal, handleCloseModal}) {
         
     ]
    return (
-    <Modal show={showModal} onHide={handleCloseModal}>
+    <Modal 
+    show={showModal} 
+    onHide={handleCloseModal} 
+    backdrop="static"
+    keyboard={false}
+    >
         <Modal.Header closeButton>
-            <Modal.Title>Bot Features</Modal.Title>
+            <Modal.Title>LearnEase BOTS</Modal.Title>
         </Modal.Header>
         <Modal.Body className="grid-example">
             <Container>

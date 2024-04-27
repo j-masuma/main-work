@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
 import Navbars from './Navbar';
+import { Button, Card } from 'react-bootstrap';
 // import './styles.css';
 
 
 // import { fetchTopicLinks } from './api'; // Assuming you have an API function to fetch topic-related links
-
+import linkImg from '../assets/images/linkImg.png'
 
 const Detective = () => {
     const [topic, setTopic] = useState('');
@@ -30,26 +31,38 @@ const Detective = () => {
           <Navbars/>
           <div className='Chats mt-5 ' style={{ backgroundColor: "smokewhite", height: "100vh", fontFamily: 'Poppins, sans-serif', display: 'flex', alignItems:"center", justifyContent: "center" }}>
           
-              <div className="main  shadow" style={{  display: "flex", flexDirection: "column", justifyContent: "center",alignItems: "center", margin: "0.5rem", marginBottom: "5px" }}>
+              <div className="main " style={{  display: "flex", flexDirection: "column", justifyContent: "center",alignItems: "center", margin: "0.5rem", marginBottom: "5px" }}>
                   <h4>Real - Time Resources</h4>
                   <div style={{  width: "100%", maxWidth: "80rem", height: "calc(100vh - 10rem)", border:"1px solid gray", marginTop:"10px" , borderRadius:"10px"}}>
                       <div className="chats" style={{ overflow: "hidden", overflowY: "scroll", scrollBehavior: 'smooth',width: "100%", maxWidth: "100rem", height: "calc(100vh - 15rem)",  }}>
-                          {/* Display topic-related links */}
-                          {/* {links.map((link, index) => (
-                          <div key={index}>
-                            {/* Display link preview */}
-                            {/* <div className="linkPreview">
-                                  <img src={link.previewImage} alt="Preview" />
-                                  <div className="previewText">
-                                      <p>{link.title}</p>
-                                      <p>{link.description}</p>
+                            <div className='p-2 pt-3'>
+                            
+                                <div className='p-1 mb-1' style={{backgroundColor:'#EDEADE'}}>
+                                  <p className='p-1'>Normalization in database with example</p>
+                                </div>
+
+                              <Card className='p-1' style={{backgroundColor:'lightblue '}}>
+                                <Card.Body className='p-1'>
+                                  <div className='rounded shadow d-flex gap-2 align-items-center' style={{backgroundColor:'#EDEADE'}}> 
+                                    <div>
+                                      <img className='p-1'  src={linkImg} width={70} height={70} alt="" />
+                                    </div>
+                                    <div className='pt-1'>
+                                        <p className='mb-1'> DBMS Normalization : 1NF, 2NF, 3NF Database</p>
+                                        <p className='mb-1' style={{color:'grey'}}>www.guru99.com</p>
+                                    </div>
                                   </div>
-                            </div> */}
-                            {/* Display link */}
-                            {/* <div className="chat bot">
-                              <a href={link.url} target="_blank" rel="noopener noreferrer">{link.url}</a>
-                            </div> */}
+                                  <div>
+                                    <Button variant="link" >https://www.guru99.com/database-normalization.html</Button>
+                                  </div>
+                                </Card.Body>
+                              </Card>
+                            </div>
+
+                            
                       </div>
+
+                      
                       <div className="chatFooter" style={{ marginTop: "auto", width: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
                           <div className="inp shadow p-2" style={{ backgroundColor: "#EEEEEE", display: "flex", alignItems: "center", borderRadius: "0.5rem", width: "50rem", margin: "8px" }}>
                               <input

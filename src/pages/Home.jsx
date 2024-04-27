@@ -9,11 +9,11 @@ import Library from "../components/Library";
 
 import Navbars from "../components/Navbar";
 
-// import Chats from "../components/Chats";
+//import Chats from "../components/Chats";
  
 
 import BotFeatures from "../components/BotFeatures";
-import Quiz from "../components/Quiz";
+//import Quiz from "../components/Quiz";
 
 
 
@@ -26,7 +26,8 @@ function Home() {
       <BotFeatures/>
       <StudyPlan/>
       <Library/>
-      <RecentChats/> 
+      <RecentChats/>
+      {/* <Chats/>  */}
       <Footer />
     </div>
     // <>

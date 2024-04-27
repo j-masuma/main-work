@@ -51,7 +51,7 @@ const StudyPlan = () => {
                     Level
                     </Form.Label>
                     <Col sm={10}>
-                    <div className="d-flex flex-row">
+                    <div className="d-flex flex-row gap-4">
                         <Form.Check
                         type="radio"
                         label="Beginner"
@@ -117,7 +117,7 @@ const StudyPlan = () => {
         </Form>
         
         <div className='d-flex justify-content-end'>
-            <button className='d-inline-flex align-items-center border rounded  p-3 ml-5 shadow' style={{ backgroundColor: 'lightgrey' }}>
+            <button className='d-inline-flex align-items-center border rounded  p-3 ml-5 shadow' style={{ backgroundColor: 'lightblue' }}>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-plus-lg" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>

@@ -11,7 +11,7 @@ const ChatWithpdf = ({ pdfUrl }) => {
     <div className='Chats' style={{ backgroundColor: "black", color: "white", height: "100vh", fontFamily: 'Poppins, sans-serif', display: 'flex' }}>
       {/* Adjust flex ratio to 6 for 60% width */}
       <div className="sideBar" style={{ flex: "6", borderRight: "1px solid white", overflowY: "auto", display: 'flex', flexDirection: 'column', padding: "10px", maxHeight: "100vh" }}>
-      
+    
       </div>
       
       {/* Adjust flex ratio to 4 for 40% width */}

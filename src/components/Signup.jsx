@@ -38,14 +38,14 @@ const Signup = () => {
         <div>
               <Row className='text-center'>
                     <Col lg={5} md={6} sm={12} className='pb-4 '>
-                        <h2 className="animated-text p-4" style={{  fontWeight: "bold", fontSize: "50px", color: "green"}}>LearnEase</h2>
-                        <p style={{  fontWeight: "normal", fontSize: "20px " ,color: "black"}}>Your Study Coordinator</p>
+                        <h2 className="animated-text p-4 text-success" style={{  fontWeight: "bold", fontSize: "50px"}}>LearnEase</h2>
+                        <p style={{  fontWeight: "normal", fontSize: "20px " }}>Your Study Coordinator</p>
                         <img src={parrot} width={300} height={300} alt="Logo" />
 
 
                         <div className=''>
                             <h3 style={{  color: "black"}}> Hi, Can you help me {" "}
-                            <span style={{ fontWeight: "normal", color: "green" , fontSize: "30px"}}>
+                            <span className='text-success' style={{ fontWeight: "normal", fontSize: "30px"}}>
                                 {text}
                             </span>
                             <span style={{color:"darkgreen"}}> <Cursor /> </span>
